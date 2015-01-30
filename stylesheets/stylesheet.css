@@ -277,3 +277,44 @@ footer {
 .cf {
   zoom:1;
 }
+
+nav {
+    text-align: center;
+    background-color: #942310;
+}
+
+nav,
+nav ul,
+nav ul li{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li:before {
+    display: none;   
+}
+
+nav ul li a,
+nav ul li.selected {
+    display: inline-block;
+    padding:  10px;
+}
+
+nav li a:focus,
+nav li a:hover,
+nav ul li.selected {
+    color: #fff;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li.selected {
+    background-color: #d44138;
+}
