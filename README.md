@@ -3,4 +3,4 @@ Repo for meridium.io
 
 ----
 
-To contrib to medidium.io switch to branch `gh-pages` and work your magic.
+To contrib to meridium.io switch to branch `gh-pages` and work your magic.
