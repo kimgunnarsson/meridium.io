@@ -1,24 +1,28 @@
+html {
+    margin: 0;
+    padding: 0;
+}
 body {
   margin: 0;
   padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
-  color: #eaeaea;
-  font: 16px;
-  line-height: 1.5;
+  background: #fff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5em;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+      -webkit-font-smoothing: antialiased;
 }
 
 /* General & 'Reset' Stuff */
 
 .container {
-  width: 90%;
   max-width: 600px;
   margin: 0 auto;
 }
 
 section {
   display: block;
-  margin: 0 0 20px 0;
+  margin: 0 0 0 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,7 +30,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 li {
-  line-height: 1.4 ;
+  line-height: 1.4em;
+    margin-bottom: 1em;
 }
 
 /* Header, <header>
@@ -36,30 +41,27 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
-  width: 100%;
-  border-bottom: 1px dashed #0f0;
+    background-color: #d44138;
   padding: 20px 0;
-  margin: 0 0 40px 0;
+    color: #fff;
 }
 
 header h1 {
   font-size: 30px;
-  line-height: 1.5;
-  margin: 0 0 0 -40px;
+  line-height: 1.5em;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #0f0;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+  color: #fff;
   letter-spacing: -1px;
-  -webkit-font-smoothing: antialiased;
 }
 
-header h1:before {
-  content: "./ ";
-  font-size: 24px;
+header a {
+    color: #fff;   
+}
+
+header a:focus,
+header a:hover {
+    text-decoration: none;   
 }
 
 header h2 {
@@ -77,10 +79,28 @@ header h2 {
 /* Main Content
 */
 
-#main_content {
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
+section#values,
+footer {
+    margin: 0 0 40px;
+    padding: 20px 30px;
+    background-color: #eee;
 }
+
+header h1, header p,
+#values h2, #values ul,
+#main_content h2, #main_content ul {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header h1, header p {
+    padding: 0 30px;
+}
+
+#main_content {
+    padding: 20px 30px;
+}
+
 section img {
   max-width: 100%
 }
@@ -88,11 +108,8 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #0f0;
+  color: #d44138;
   letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
 }
 
 #main_content h1 {
@@ -129,6 +146,12 @@ dt {
   font-weight: bold;
 }
 
+#main_content ul {
+    padding-bottom: 20px;  
+    margin-bottom: 40px;
+    border-bottom: solid 1px #eee;
+}
+
 ul li {
   list-style: none;
 }
@@ -137,7 +160,7 @@ ul li:before {
   content: ">>";
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 13px;
-  color: #0f0;
+  color: #d44138;
   margin-left: -37px;
   margin-right: 21px;
   line-height: 16px;
@@ -154,7 +177,7 @@ pre {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 14px;
-  color: #0f0;
+  color: #d44138;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -170,7 +193,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed #0f0;
+  border-bottom: 1px dashed #d44138;
   padding: 5px 10px;
 }
 
@@ -181,8 +204,8 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed #0f0;
-  color: #0f0;
+  border-bottom: 1px dashed #d44138;
+  color: #d44138;
 }
 
 /* Buttons
@@ -227,8 +250,17 @@ hr {
 */
 
 a {
-  color: #63c0f5;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  color: #d44138;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center; 
+        margin: 0;
 }
 
 /* Clearfix */
